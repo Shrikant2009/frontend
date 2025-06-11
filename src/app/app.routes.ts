@@ -17,10 +17,20 @@ export const routes: Routes = [
         path: 'register',
         component: Signup,
       },
+      {
+        path: '',
+        redirectTo: 'login',
+        pathMatch: 'full',
+      },
     ],
   },
   {
     path: 'home',
     component: FeatureEvaluator,
+  },
+  {
+    path: '',
+    redirectTo: 'auth',
+    pathMatch: 'full',
   },
 ];
