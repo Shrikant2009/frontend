@@ -2,18 +2,18 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Import your standalone components
-import { Signup } from './signup/signup';
-import { Login } from './login/login';
-import { FeatureEvaluator } from "./feature-evaluator/feature-evaluator";
+import { Signup } from './auth/signup/signup';
+import { Login } from './auth/login/login';
+import { FeatureEvaluator } from './feature-evaluator/feature-evaluator';
 import { FormsModule } from '@angular/forms';
-
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, Signup, Login, FeatureEvaluator,FormsModule],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrls: ['./app.scss']
+  styleUrls: ['./app.scss'],
 })
 export class App {
   title = 'My App';
@@ -29,7 +29,7 @@ export class App {
   onSignedUp() {
     this.setView('login');
   }
-  
+
   onLoggedIn() {
     this.setView('main');
   }
