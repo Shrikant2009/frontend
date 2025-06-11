@@ -1,0 +1,67 @@
+.feature-evaluator {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 0.8rem 0 0.3rem;
+  font-weight: 600;
+}
+
+select, input[type="text"] {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: 1.8px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+select:focus, input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px #007bffaa;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #007bff;
+}
+
+button {
+  margin-top: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.65rem 1.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 500px) {
+  .feature-evaluator {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}

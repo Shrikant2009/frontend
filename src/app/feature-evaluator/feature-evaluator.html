@@ -1,0 +1,50 @@
+<div class="feature-evaluator">
+
+  <!-- Feature Dropdown -->
+  <label for="feature-select">Feature:</label>
+  <select id="feature-select" [(ngModel)]="selectedFeature" (change)="onFeatureChange()">
+    <option [ngValue]="null" disabled selected>Select feature</option>
+    <option *ngFor="let f of features" [ngValue]="f.id">{{ f.name }}</option>
+  </select>
+
+  <!-- Operation Dropdown -->
+  <div *ngIf="operations.length > 0">
+    <label for="operation-select">Operation:</label>
+    <select id="operation-select" [(ngModel)]="selectedOperation" (change)="onOperationChange()">
+      <option [ngValue]="null" disabled selected>Select operation</option>
+      <option *ngFor="let op of operations" [ngValue]="op.id">{{ op.name }}</option>
+    </select>
+  </div>
+
+  <!-- Variation Dropdown -->
+  <div *ngIf="variations.length > 0">
+    <label for="variation-select">Variation:</label>
+    <select id="variation-select" (change)="onVariationSelect($event)">
+      <option [value]="null" disabled selected>Select variation</option>
+      <option *ngFor="let v of variations" [value]="v.id">{{ v.name }}</option>
+    </select>
+  </div>
+
+  <!-- Input Fields -->
+  <div *ngIf="selectedVariation">
+    <h3>Inputs:</h3>
+    <div *ngFor="let param of selectedVariation.params">
+      <label>{{ param }}</label>
+      <input type="text" [(ngModel)]="inputValues[param]" />
+    </div>
+    <button (click)="onSubmit()">Evaluate</button>
+  </div>
+
+  <!-- Status -->
+  <div *ngIf="status">
+    <h3>Status:</h3>
+    <p>{{ status }}</p>
+  </div>
+
+  <!-- Result -->
+  <div *ngIf="result !== null">
+    <h3>Result:</h3>
+    <p>{{ result }}</p>
+  </div>
+
+</div>
