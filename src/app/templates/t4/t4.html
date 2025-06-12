@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tax Invoice</title>
+  <link rel="stylesheet" href="t4.scss">
+</head>
+<body>
+  <div class="invoice-box">
+    <h2 class="title">TAX INVOICE</h2>
+
+    <div class="company-header">
+      <div class="center-text">
+        <h1>Akash Enterprises</h1>
+        <p>Ajmer Road, Jaipur, Rajasthan 301202</p>
+      </div>
+      <div class="row-text">
+        <span><strong>Phone:</strong> +91 9981278197</span>
+        <span><strong>GSTIN:</strong> 08AALCR2857A1ZD</span>
+        <span><strong>PAN Number:</strong> AVHPC9999A</span>
+      </div>
+    </div>
+
+    <div class="bill-section">
+      <div class="bill-to">
+        <p><strong>BILL TO</strong></p>
+        <p><strong>Sampath Singh</strong></p>
+        <p>04, KK Buildings, Ajmeri Gate, Jodhpur, Rajasthan, 304582</p>
+        <p>Phone: +91 9981028177</p>
+        <p>PAN Number: BBHPC9999A</p>
+        <p>GSTIN: 08HULMP2839A1AB</p>
+        <p>Place of Supply: Rajasthan</p>
+      </div>
+      <div class="invoice-details">
+        <p><strong>Invoice No</strong><br> S01</p>
+        <p><strong>Invoice Date</strong><br> 11 August 2023</p>
+      </div>
+    </div>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Items</th>
+          <th>Quantity</th>
+          <th>Price / Unit</th>
+          <th>Tax / Unit</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Apple normal</td>
+          <td>5 KG</td>
+          <td>Rs. 100.00</td>
+          <td>Rs. 5.00 (5%)</td>
+          <td>Rs. 525.00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Orange</td>
+          <td>10 KG</td>
+          <td>Rs. 40.00</td>
+          <td>Rs. 2.00 (5%)</td>
+          <td>Rs. 525.00</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Orange</td>
+          <td>5 KG</td>
+          <td>Rs. 40.00</td>
+          <td>Rs. 2.00 (5%)</td>
+          <td>Rs. 210.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="summary-table">
+      <tr>
+        <td colspan="5">Discount</td>
+        <td>Rs. 100.00</td>
+      </tr>
+      <tr class="highlight">
+        <td colspan="2"><strong>Total</strong></td>
+        <td>20</td>
+        <td>Rs. 55.00</td>
+        <td colspan="2">Rs. 1055.00</td>
+      </tr>
+      <tr>
+        <td colspan="5">Received Amount</td>
+        <td>Rs. 500.00</td>
+      </tr>
+      <tr>
+        <td colspan="5">Due Balance</td>
+        <td>Rs. 555.00</td>
+      </tr>
+    </table>
+
+    <div class="footer-section">
+      <div class="notes">
+        <p><strong>Notes</strong></p>
+        <p>1. No return deal</p>
+      </div>
+      <div class="terms">
+        <p><strong>Terms & Conditions</strong></p>
+        <p>1. Customer will pay the GST</p>
+        <p>2. Customer will pay the Delivery charges</p>
+        <p>3. Pay due amount within 15 days</p>
+      </div>
+    </div>
+    <hr/>
+    <div class="signature">
+      <p>Authorised Signatory For<br>Akash Enterprises</p>
+    </div>
+  </div>
+</body>
+</html>

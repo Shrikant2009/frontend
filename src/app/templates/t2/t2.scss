@@ -1,0 +1,92 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+  background-color: #e0f7fa;
+  min-height: 100vh;
+}
+
+.signup-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+.signup-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.signup-form input,
+.signup-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.gender-box {
+  border: 2px solid #ccc;
+  border-radius: 0;  /* rectangular corners */
+  padding: 8px 14px; /* smaller padding */
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: border-color 0.3s, background-color 0.3s;
+  min-width: 80px;  /* smaller fixed width */
+  justify-content: center;
+  font-size: 14px;  /* slightly smaller text */
+}
+
+.gender-box input[type="radio"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+/* Highlight box when selected */
+.gender-box input[type="radio"]:checked + span {
+  border-color: #007bff;
+  background-color: #cce4ff;
+  color: #007bff;
+}
+
+.gender-box:hover {
+  border-color: #007bff;
+}
+
+
+.signup-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:disabled {
+  background-color: #9e9e9e;
+}
