@@ -6,16 +6,26 @@ import { Signup } from './auth/signup/signup';
 import { Login } from './auth/login/login';
 import { FeatureEvaluator } from './feature-evaluator/feature-evaluator';
 import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { Auth } from "./auth/auth";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.html',
   styleUrls: ['./app.scss'],
 })
 export class App {
+goToHome() {
+throw new Error('Method not implemented.');
+}
+goRegistration() {
+throw new Error('Method not implemented.');
+}
+goToLogin() {
+throw new Error('Method not implemented.');
+}
   title = 'My App';
   activeView: 'signup' | 'login' | 'main' = 'signup';
 

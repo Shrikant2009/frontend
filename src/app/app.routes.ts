@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { Auth } from './auth/auth';
 import { Login } from './auth/login/login';
 import { Signup } from './auth/signup/signup';
@@ -83,3 +83,6 @@ export const routes: Routes = [
     pathMatch: 'full'
   },
 ];
+
+
+
